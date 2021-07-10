@@ -1,0 +1,244 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+    
+  }
+:root{
+    font-size: 62.5%;
+}
+
+/* Header */
+header{
+    /* border: 2px solid red; */
+    background-color:#e1814657;
+    margin: 30px;
+    height: 10vh;
+         box-shadow:7px 7px 7px rgba(141, 140, 140,0.6);
+         border-radius: 11px;
+          margin-bottom: 7px;
+         display:flex;
+         align-items: center;
+         position:sticky;
+         top:10px;
+         z-index: 100;
+}
+
+/* logo and heading */
+#logobox{
+    text-decoration: none;
+    color: black;
+}
+#logocontainer{
+    display:flex;
+    align-items: center;
+    margin: 7px;
+}
+#logo{
+width: 55px;
+}
+#mheading{
+    font-size: 3rem;
+    margin: 5px;
+}
+
+/* Navigation Bar and footer */
+nav{
+    position: absolute;
+    right:0px;
+    
+}
+    
+    nav ul li, footer li{
+        list-style: none;
+    
+    }
+    nav ul a, footer a{ 
+        text-decoration: none;
+        padding: 7px;
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: black;
+        
+        margin: 5px;
+    }
+    nav ul a:hover, #active{
+        background-color: #5525da;
+        color: white;
+        border-radius: 3px;
+    }
+    nav ul, footer ul{
+        display: flex;
+        margin: 10px;
+align-items: center;
+    }
+#mainheading{
+    font-weight: bold;
+    font-size:4rem;
+    margin: 34px;
+}
+#line{
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin: 34px;
+    color: #5525da;
+}
+.social{
+   margin: 3px;
+   width:100px;
+   transition: all 0.3s ease-in-out;
+}
+#box{
+    margin: 34px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.social:hover{
+    transform: scale(1.1);
+}
+.map{
+    margin: 34px;
+}
+#address{
+    font-size: 1.7rem;
+font-weight: bold;
+margin: 60px 34px;
+}
+.mapouter{position:relative;text-align:right;height:500px;width:600px;}
+footer{
+    /* border: 2px solid red; */
+    background-color: rgb(228, 228, 228);
+}
+footer ul {
+    justify-content: center;
+    
+}
+footer a{
+    padding:0px;
+}
+Footer a:hover{
+    color:#5525da;
+}
+@media only screen and (min-width:0px) and (max-width: 1283px) {
+    body{
+        background: url('img/illustration.png') no-repeat center right;
+        background-size: 650px;
+        
+    }
+
+}
+@media only screen and (min-width:0px) and (max-width: 1283px){
+    body{
+        background: url('img/illustration.png') no-repeat center right;
+        background-size: 500px;
+        
+    }
+}
+@media only screen and (min-width:0px) and (max-width: 1039px){
+    body{
+        background: url('img/illustration.png') no-repeat center right;
+        background-size: 350px;
+    
+    }
+}
+@media only screen and (min-width:0px) and (max-width: 924px){
+    body{
+        background:none;
+    }
+}
+@media only screen and (min-width:0px) and (max-width: 647px){
+    .map iframe{
+        width: 400px;
+        height: 333.333333px;
+        margin: 0px;
+        float: left;
+    }
+    .mapouter{
+        width: 400px;
+        height: 333.333333px;
+    }
+    #address{
+    margin: 20px 34px;
+    }
+}
+@media only screen and (min-width:0px) and (max-width: 571px){
+#mheading{
+    display:none;
+}
+}
+@media only screen and (min-width:0px) and (max-width: 485px){
+    .map iframe{
+        width: 350px;
+        height: 291.666667px;
+        margin: 0px;
+        float: left;
+    }
+    .mapouter{
+        width: 350px;
+        height: 291.666667px;
+    }
+    #address{
+    margin: 20px 34px;
+    }
+    #logo{
+        width: 50px;
+    }
+}
+@media only screen and (min-width:0px) and (max-width: 392px){
+    .map iframe{
+        width: 300px;
+        height: 250px;
+        margin: 0px;
+        float: left;
+    }
+    .mapouter{
+        width: 300px;
+        height: 250px;
+    }
+    #address{
+    margin: 20px 34px;
+    }
+    #logo{
+        width: 40px;
+    }
+    header{
+        margin:10px;
+    }
+    
+}
+@media only screen and (min-width:0px) and (max-width: 344px){
+    .map iframe{
+        width: 250px;
+        height: 208.333333px;
+        margin: 0px;
+        float: left;
+    }
+    .mapouter{
+        width: 250px;
+        height: 208.333333px;;
+    }
+    #address{
+    margin: 20px 34px;
+    }
+    #logo{
+        width: 40px;
+    }
+    header{
+        margin:5px;
+    }
+    nav ul a{
+        font-size: 1rem;
+    }
+    
+}
+@media only screen and (min-width:0px) and (max-width: 300px){
+    #box{
+        display: grid;
+         grid-template-columns: repeat(1,auto);
+         grid-template-rows: repeat(4,auto);
+    }
+}

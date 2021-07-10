@@ -1,0 +1,305 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+    
+  }
+:root{
+    font-size: 62.5%;
+}
+
+/* Header */
+header{
+    /* border: 2px solid red; */
+    background-color:#e1814657;
+    margin: 30px;
+    height: 10vh;
+         box-shadow:7px 7px 7px rgba(141, 140, 140,0.6);
+         border-radius: 11px;
+          margin-bottom: 7px;
+         display:flex;
+         align-items: center;
+         position:sticky;
+         top:10px;
+         z-index: 100;
+}
+
+/* logo and heading */
+#logobox{
+    text-decoration: none;
+    color: black;
+}
+#logocontainer{
+    display:flex;
+    align-items: center;
+    margin: 7px;
+}
+#logo{
+width: 55px;
+}
+#mheading{
+    font-size: 3rem;
+    margin: 5px;
+}
+
+/* Navigation Bar and footer */
+nav{
+    position: absolute;
+    right:0px;
+    
+}
+    
+    nav ul li, footer li{
+        list-style: none;
+    
+    }
+    nav ul a, footer a{ 
+        text-decoration: none;
+        padding: 7px;
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: black;
+        
+        margin: 5px;
+    }
+    nav ul a:hover, #active{
+        background-color: #5525da;
+        color: white;
+        border-radius: 3px;
+    }
+    nav ul, footer ul{
+        display: flex;
+        margin: 10px;
+align-items: center;
+    }
+
+/* Section 1 */
+#sec1{
+    background: url('img/illustration.png') no-repeat right top;
+    background-size: 1000px;
+    display:flex;
+    align-items: center;
+
+    height: 100vh;
+    display: flex;
+ }
+ #imglogo{
+     width: 200px;
+     display: inline-block;
+ }
+ #text,#found{
+    font-size: 6rem;
+    display: inline-block;
+    position: relative;
+    top: -50px;
+    line-height: 0em;
+    color:#5525da;
+
+ }
+ #found{
+    font-size: 2rem;
+    line-height: 2em;
+    color:#5525da;
+     display: block;
+     text-align: right;
+ }
+ #mainbox{
+     /* border:2px solid red; */
+     margin-left: 20px;
+     
+ }
+ 
+ .btn{
+     background-color: #fddbc6;
+     color:#e18146;
+     text-decoration: none;
+     font-size: 2rem;
+     padding: 8px 15px;
+     border-radius: 30px;
+     font-weight: bold;
+    margin: 5px;
+    border: 2px solid #e18146;
+    font-family: 'sans-serif';
+ }
+ #btns{
+     display: flex;
+     justify-content:center;
+     
+ }
+ .btn:hover{
+     background-color: rgb(255, 255, 255);
+     color:#5525da;
+     border: 2px solid #5525da;
+    
+ }
+
+ /* Section 2 */
+ #sec2{
+     background-color: #fff2ea;
+ }
+ #faculty{
+     font-size: 4rem;
+     font-weight:bold;
+    text-align: center;
+    padding:10px;
+    color: #5525da;
+ }
+ .images{
+    width: 200px;
+    border: 2px  solid rgb(0, 0, 0);
+    height:200px;
+    border-radius: 50%;
+    /* transition: all 0.3s; */
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(1,200px);
+    justify-content: center;
+    /* margin: 50px; */
+    margin-bottom:0px;
+    flex-wrap: wrap;
+    
+}
+.items{
+    text-align: center;
+}
+.imgnames{
+    margin: 50px 0px 50px 0px;
+    transition: all 0.3s;
+    
+}
+.imgnames:hover{
+    transform:scale(1.1);
+    color:#5525da;
+}
+#founder{
+    font-size: 2rem;
+    text-align: center;
+    margin: 30px;
+}
+/* Footer */
+footer{
+    /* border: 2px solid red; */
+    background-color: rgb(228, 228, 228);
+}
+footer ul {
+    justify-content: center;
+    
+}
+footer a{
+    padding:0px;
+}
+Footer a:hover{
+    color:#5525da;
+}
+#startwith{
+   font-size:2rem;
+}
+ 
+/* Responsive Design */
+
+
+@media only screen and (min-width:0px) and (max-width: 1460px) {
+    #mainbox{
+        background-color:rgba(228, 228, 228,0.5);
+        padding: 30px;
+        border-radius: 30px;
+        border: 2px solid black;
+    }
+}
+@media only screen and (min-width: 0px) and (max-width: 1070px) { 
+#sec1{
+   justify-content: center;
+   background: url('img/illustration.png') no-repeat center center/cover;
+}
+
+}
+@media only screen and (min-width: 576px) and (max-width: 1000px){
+   .container{
+    grid-template-columns: repeat(2,200px);
+   } 
+}
+@media only screen and (min-width: 0px) and (max-width: 576px){
+    .container{
+        grid-template-columns: repeat(1,200px);
+       } 
+       #mheading{
+           display: none;
+       }
+}
+@media only screen and (min-width: 389px) and (max-width: 538px){
+   #imglogo{
+    width: 100px;
+   }
+   #text{
+          font-size: 4rem;
+          position: absolute;
+          top:357px;
+          
+         
+   }
+}
+@media only screen and (min-width: 0px) and (max-width: 437px){
+    #imglogo{
+           width: 70px;
+    }
+    #text{
+      font-size: 3rem;
+      position: relative;
+      top: -25px;
+    }
+    .btn{
+        font-size: 1rem;
+    }
+    header{
+        margin:10px;
+    }
+    #found{
+        line-height: 5em;
+    }
+}
+@media only screen and (min-width: 0px) and (max-width: 307px){
+    #text{
+        font-size: 3rem;
+        position: relative;
+        top: 10px;
+        
+      }
+      #btns{
+          position: relative;
+          top: 20px;
+      }
+     
+}
+@media only screen and (min-width: 0px) and (max-width: 900px){
+    #sec1{
+        background: url('img/illustration.png') no-repeat center top/contain;
+    }
+}
+@media only screen and (min-width: 0px) and (max-width: 380px){
+nav ul a{
+    font-size: 1rem;
+}
+#logo{
+    width: 30px;
+}
+    }
+    @media only screen and (min-width: 0px) and (max-width: 800px){
+  #sec1{
+      height: 60vh;
+  }
+    }
+    @media only screen and (min-width: 437px) and (max-width: 538px){
+    #text{
+        position: relative;
+        top: -35px;
+    }
+    #found{
+        line-height: 4em;
+    }
+    }
